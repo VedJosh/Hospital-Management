@@ -80,9 +80,9 @@ def deletep(r):
             print(x['name'])
             test = True
             continue
+        pickle.dump(x,f)
     if test==False:
         print('No record Found')
-        pickle.dump(x,f)
     f.close()
 def message():
     print('*'*100)
